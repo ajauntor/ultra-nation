@@ -1,13 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect, useState } from 'react';
 
 function App() {
+
+  
+ const [countries, setCountries] = useState([]);
+ useEffect(()=> {}, {})
+
+
+
+
+
   return (
     <div className="App">
+      <h1>Country loaded : {countries.length}</h1>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit done <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
